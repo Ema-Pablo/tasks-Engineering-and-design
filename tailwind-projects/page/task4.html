@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-800 font-['Inter']">
+    <!-- Шапка -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-blue-600 hover:text-blue-800">
+                    ← На главную
+                </a>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#about" class="hover:text-blue-600">О нас</a>
+                    <a href="#services" class="hover:text-blue-600">Услуги</a>
+                    <a href="#contact" class="hover:text-blue-600">Контакты</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-gray-600">
+                        ☰
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="bg-blue-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4">
+                        Кот всё так же ест
+                    </h1>
+                    <p class="text-gray-600 mb-6">
+                        Создаем продукты(не чипсы 😭), а цифровые 
+                    </p>
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded inline-block">
+                        Начать проект
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="../images/landing/cat-eat.gif" alt="Технологии" class="rounded-lg shadow max-w-md w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="../images/landing/image-dog.png" alt="О компании" class="rounded-lg shadow w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">О компании</h2>
+                    <p class="text-gray-600 mb-4">
+                        Мы работаем с 2015 года и реализовали более 200 успешных 
+                    </p>
+                    <p class="text-gray-600">
+                        Наша команда экспертов создает современные решения для бизнеса.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-2">Наши услуги</h2>
+                <p class="text-gray-600">Полный цикл разработки цифровых продуктов</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Веб-разработка</h3>
+                    <p class="text-gray-600 mb-4">
+                        Создаем современные продукты
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Мобильные приложения</h3>
+                    <p class="text-gray-600 mb-4">
+                        Разработка приложений для iOS и Android.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">UI/UX дизайн</h3>
+                    <p class="text-gray-600 mb-4">
+                        Сдаём грузовики на прокат
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контактная форма -->
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-2">Контакты</h2>
+                    <p class="text-gray-600">Свяжитесь с нами для обсуждения проекта</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg shadow p-6">
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" class="w-full px-4 py-3 rounded border border-gray-300" placeholder="Ваше имя">
+                        </div>
+                        <div>
+                            <input type="email" class="w-full px-4 py-3 rounded border border-gray-300" placeholder="Email">
+                        </div>
+                        <div>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded border border-gray-300" placeholder="Сообщение"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p>&copy; PABLO CORP 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

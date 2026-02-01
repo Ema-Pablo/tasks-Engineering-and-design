@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея изображений</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4 font-['Inter']">
+    <div class="max-w-6xl mx-auto">
+        <a href="index.html" class="inline-block mb-4 text-blue-600 hover:text-blue-800">
+            ← На главную
+        </a>
+        <h1 class="text-2xl font-semibold mb-2">Галерея изображений</h1>
+        <p class="text-gray-600 mb-6">Адаптивная сетка изображений</p>
+        
+        <!-- Фильтры -->
+        <div class="flex flex-wrap gap-2 mb-6">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">
+                Все
+            </button>
+            <button class="bg-white text-gray-700 px-4 py-2 rounded border">
+                Природа
+            </button>
+            <button class="bg-white text-gray-700 px-4 py-2 rounded border">
+                Города
+            </button>
+            <button class="bg-white text-gray-700 px-4 py-2 rounded border">
+                Портреты
+            </button>
+        </div>
+        
+        <!-- Галерея -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="md:col-span-2">
+                <img src="../images/gallery/кот_1.jpg" alt="Горы" class="w-full h-64 object-cover rounded-lg shadow">
+            </div>
+            
+            <div>
+                <img src="../images/gallery/кот_2.jpg" alt="Город" class="w-full h-64 object-cover rounded-lg shadow">
+            </div>
+            
+            <div class="md:row-span-2">
+                <img src="../images/gallery/кот_3.jpg" alt="Портрет" class="w-full h-full object-cover rounded-lg shadow">
+            </div>
+            
+            <div>
+                <img src="../images/gallery/кот_4.jpg" alt="Архитектура" class="w-full h-48 object-cover rounded-lg shadow">
+            </div>
+            
+            <div>
+                <img src="../images/gallery/кот_5.jpg" alt="Пляж" class="w-full h-48 object-cover rounded-lg shadow">
+            </div>
+            
+            <div class="md:col-span-2">
+                <img src="../images/gallery/кот_6.jpg" alt="Мост" class="w-full h-56 object-cover rounded-lg shadow">
+            </div>
+            
+            <div class="md:row-span-2">
+                <img src="../images/gallery/кот_7.jpg" alt="Лес" class="w-full h-full object-cover rounded-lg shadow">
+            </div>
+            
+            <div class="md:col-span-2">
+                <img src="../images/gallery/кот_8.jpg" alt="Водопад" class="w-full h-64 object-cover rounded-lg shadow">
+            </div>
+            
+            <div>
+                <img src="../images/gallery/кот_9.jpg" alt="Пустыня" class="w-full h-48 object-cover rounded-lg shadow">
+            </div>
+            
+            <div>
+                <img src="../images/gallery/кот_10.jpg" alt="Озеро" class="w-full h-48 object-cover rounded-lg shadow">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
