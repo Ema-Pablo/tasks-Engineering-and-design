@@ -1,0 +1,270 @@
+body {
+  padding: 40px;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  color: #4a6ee0;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.grid-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.statistics {
+  background-color: #ffffff;
+  border-radius: 24px;
+  border: 2px solid #f7f7f7;
+  padding: 24px;
+}
+
+.statistics.basic {
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.numbers-basic {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.grid-statistics-basic {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.cell-statistics-basic {
+  background-color: #f7f7f7;
+  padding: 16px;
+  border-radius: 12px;
+  
+  p {
+    color: #838383;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  h1 {
+    color: #4b4b4b;
+  }
+}
+
+.history-basic {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row-history {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  padding: 8px 0;
+  
+  h3 {
+    color: #5f5f5f;
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #b1b1b1;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #f3f3f3;
+}
+
+.statistics.row {
+  display: flex;
+  gap: 16px;
+  grid-column: span 2;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Стили для заголовка прогресса */
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Свитч (переключатель) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+  
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e0e0e0;
+  transition: .3s;
+  border-radius: 34px;
+  
+  &:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+  }
+}
+
+.switch input:checked + .slider {
+  background-color: #0c9229;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.statistics.row:has(.switch input:not(:checked)) .progress-bar {
+  visibility: hidden;
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.statistics.row:has(.switch input:checked) .progress-bar {
+  visibility: visible;
+  width: 100%;
+  height: 40px;
+  opacity: 1;
+}
+
+.progress-bar {
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 40px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.green {
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  background-color: #0c9229;
+  color: #ffffff;
+  width: 70%;
+}
+
+.grey {
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  background-color: #f7f7f7;
+  color: #686868;
+  width: 30%;
+}
+
+.statistics.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.chart-tabl {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.up {
+  display: flex;
+  align-items: end;
+  height: 240px;
+  
+  * {
+    color: #ffffff;
+    flex: 1;
+    text-align: center;
+    padding: 8px 0 0 0;
+    background-color: #0c9229;
+    border-radius: 4px;
+    margin: 0 4px;
+  }
+}
+
+.monday { height: 32%; }
+.tuesday { height: 51%; }
+.wednesday { height: 67%; }
+.thursday { height: 40%; }
+.friday { height: 82%; }
+.saturday { height: 91%; }
+.sunday { height: 75%; }
+
+.down-numbers {
+  display: flex;
+  flex-direction: row;
+  
+  * {
+    margin: 0 4px;
+    flex: 1;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 4px;
+    background-color: #ebebeb;
+    font-size: 14px;
+    color: #5f5f5f;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  body {
+    padding: 16px;
+  }
+}

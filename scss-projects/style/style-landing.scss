@@ -1,0 +1,459 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  margin: 0;
+  padding: 0 64px;
+  font-family: 'Inter', sans-serif;
+}
+
+.landing-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ===== ТИПОГРАФИЯ ===== */
+.hero h1 {
+  font-size: 120px;
+  font-weight: 700;
+  color: #181818;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 16px 0;
+}
+
+/* ===== ШАПКА ===== */
+.head-content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-buttons {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  
+  a {
+    font-size: 18px;
+    color: #444444;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+  }
+}
+
+.back-link {
+  color: #4a6ee0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Бургер-меню */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.burger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* ===== ГЛАВНАЯ СЕКЦИЯ ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #ffffff;
+  border-radius: 32px;
+  border: 2px solid #f7f7f7;
+  margin: 32px 0 120px;
+  min-height: 640px;
+}
+
+.left-hero {
+  padding: 40px;
+}
+
+.image-hero {
+  width: 520px;
+  height: 520px;
+}
+
+.image-cat-eat {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background: #4a6ee0;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0);
+  position: relative;
+  
+  &:hover {
+    background: #3a5ed0;
+    box-shadow: 0 2px 8px #4a6de09d;
+    transform: translateY(-2px);
+  }
+}
+
+/* ===== О НАС ===== */
+.about {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.right-about {
+  flex: 1;
+}
+
+.image-about {
+  width: 640px;
+  height: 640px;
+  flex-shrink: 0;
+}
+
+.image-dog {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== УСЛУГИ ===== */
+.services {
+  background: #ffffff;
+  border: 2px solid #f7f7f7;
+  border-radius: 32px;
+  padding: 40px;
+  margin-bottom: 120px;
+}
+
+.services-title {
+  margin-bottom: 16px;
+}
+
+.services-subtitle {
+  margin-bottom: 48px;
+  color: #666;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  border-radius: 24px;
+  padding: 40px 32px;
+  border: 1px solid #eee;
+}
+
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.service-card h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+/* ===== ОТЗЫВЫ ===== */
+.testimonials {
+  background: #ffffff;
+  border: 2px solid #f7f7f7;
+  border-radius: 32px;
+  padding: 40px;
+  margin-bottom: 120px;
+}
+
+.testimonials-title {
+  margin-bottom: 16px;
+}
+
+.testimonials-subtitle {
+  margin-bottom: 48px;
+  color: #666;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.testimonial-card {
+  background: #f9f9f9;
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid #eee;
+}
+
+.testimonial-text {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-avatar {
+  width: 56px;
+  height: 56px;
+  background: #4a6ee0;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.author-info h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+/* ===== КОНТАКТЫ ===== */
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 40px;
+  border-radius: 32px;
+  background: #ffffff;
+  border: 2px solid #f7f7f7;
+  
+  h3 {
+    color: #303030;
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+  
+  > p {
+    color: #303030;
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+.simple-contacts p {
+  font-size: 20px;
+  margin: 0 0 16px 0;
+  color: #303030;
+}
+
+/* ===== АДАПТИВ ===== */
+/* Для планшетов (1024px) */
+@media (max-width: 1024px) {
+  body {
+    padding: 0 32px;
+  }
+  
+  .hero h1 {
+    font-size: 80px;
+  }
+  
+  .hero {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 32px 0 0 0;
+  }
+  
+  .left-hero {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-hero {
+    width: 400px;
+    height: 400px;
+  }
+  
+  h2 {
+    font-size: 48px;
+  }
+  
+  .about {
+    gap: 32px;
+  }
+  
+  .image-about {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact h3 {
+    font-size: 48px;
+  }
+  
+  .contact-buttons {
+    justify-content: center;
+  }
+}
+
+/* Для телефонов (600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 0 20px;
+  }
+  
+  .burger {
+    display: flex;
+  }
+  
+  .head-buttons a:not(.burger) {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  .hero h3 {
+    font-size: 18px;
+  }
+  
+  .image-hero {
+    width: 100%;
+  }
+  
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .image-about {
+    width: 100%;
+    height: 300px;
+    order: -1;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  .services,
+  .testimonials {
+    padding: 30px 20px;
+    margin-bottom: 60px;
+  }
+  
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .service-card,
+  .testimonial-card {
+    padding: 20px;
+  }
+  
+  .contact {
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+    
+    h3 {
+      font-size: 36px;
+    }
+    
+    > p {
+      font-size: 18px;
+    }
+  }
+  
+  .contact-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* Для маленьких телефонов (400px) */
+@media (max-width: 400px) {
+  body {
+    padding: 0 16px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+  }
+  
+  .image-about {
+    height: 250px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  .contact h3 {
+    font-size: 32px;
+  }
+}

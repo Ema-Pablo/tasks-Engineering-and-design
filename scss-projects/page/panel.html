@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Проекты</title>
+    <link rel="stylesheet" href="../style/global-styles.css">
+    <link rel="stylesheet" href="../style/style-panel.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1>Панель управления</h1>
+        <a href="index.html" class="back-link">← На главную</a>
+        
+        <div class="grid-panel">
+            <div class="statistics basic">
+                <div class="numbers-basic">
+                    <h3>Финансы</h3>
+                    <div class="grid-statistics-basic">
+                        <div class="cell-statistics-basic">
+                            <p>Прибыль</p>
+                            <h2>$30 342</h2>
+                        </div>
+                        <div class="cell-statistics-basic">
+                            <p>Расходы</p>
+                            <h2>$11 453</h2>
+                        </div>
+                        <div class="cell-statistics-basic">
+                            <p>Курс $</p>
+                            <h2>75.73</h2>
+                        </div>
+                        <div class="cell-statistics-basic">
+                            <p>Курс €</p>
+                            <h2>90.47</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-basic">
+                    <h3>История списаний</h3>
+                    <div>
+                        <div class="row-history">
+                            <h3>-$10</h3>
+                            <p>12:00</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="row-history">
+                            <h3>-$11</h3>
+                            <p>11:00</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="row-history">
+                            <h3>-$100</h3>
+                            <p>10:00</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="row-history">
+                            <h3>-$1 012</h3>
+                            <p>9:00</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="row-history">
+                            <h3>-$5 542</h3>
+                            <p>8:00</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="row-history">
+                            <h3>-$11</h3>
+                            <p>7:00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="statistics row">
+                <div class="progress-header">
+                    <h3>Прогресс</h3>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="green">
+                        <p>70%</p>
+                    </div>
+                    <div class="grey">
+                        <p>30%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="statistics chart"> 
+                <h3>График заполнения</h3>
+                <div class="chart-tabl">
+                    <div class="up">
+                        <div class="monday">32%</div>
+                        <div class="tuesday">51%</div>
+                        <div class="wednesday">67%</div>
+                        <div class="thursday">40%</div>
+                        <div class="friday">82%</div>
+                        <div class="saturday">91%</div>
+                        <div class="sunday">75%</div>
+                    </div>
+                    <div class="down-numbers">
+                        <div>16.01</div>
+                        <div>17.01</div>
+                        <div>18.01</div>
+                        <div>19.01</div>
+                        <div>20.01</div>
+                        <div>21.01</div>
+                        <div>22.01</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
