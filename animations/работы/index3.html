@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Привет, animation!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../материал/epoch1.css">
+    </head>
+    <body class="ancient">
+        <div class="lift-top">
+            <div class="platform">
+                <span class="stone-wheel"></span>
+            </div>
+        </div>
+    </body>
+	<style>
+.platform {
+    animation-name: lift-up;
+    animation-duration: 3s;
+}
+
+@keyframes lift-up {
+    0% {
+        transform: translateY(0px);
+    }
+    50%, 80% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(-500px);
+    }
+}
+	</style>
+</html>

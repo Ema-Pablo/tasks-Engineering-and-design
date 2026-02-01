@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Привет, animation!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../материал/epoch2.css">
+    </head>
+    <body class="mechanical">
+        <div class="clock">
+            <span class="arrow"></span>
+        </div>
+    </body>
+	<style>
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.arrow {
+    animation-iteration-count: infinite;
+    animation-name: rotate;
+    animation-duration: 2s;
+}
+	</style>
+</html>

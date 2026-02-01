@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Привет, animation!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../материал/epoch2.css">
+    </head>
+    <body class="mechanical">
+        <div class="alarm-clock">
+            <span class="bell"></span>
+            <span class="arrow-small"></span>
+        </div>
+    </body>
+	<style>
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes ding{
+    33% {
+        transform: translateX(-15px);
+    }
+    66% {
+        transform: translateX(15px);
+    }
+}
+.arrow-small {
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+.bell {
+    animation-name: ding;
+    animation-duration: 100ms;
+    animation-delay: 1s;
+    animation-iteration-count: 10;
+}
+
+	</style>
+</html>

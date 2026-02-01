@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Привет, animation!</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="../материал/epoch4.css">
+    </head>
+    <body class="technologic">
+        <div class="belt">
+            <span class="robot warrior"></span>
+        </div>
+        <div class="belt">
+            <span class="robot constructor"></span>
+        </div>
+    </body>
+	<style>
+.robot {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.constructor {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+    to {
+        left: 400px;
+    }
+}
+	</style>
+</html>

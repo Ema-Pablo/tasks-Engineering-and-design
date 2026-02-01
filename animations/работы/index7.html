@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Привет, animation!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../материал/epoch2.css">
+    </head>
+    <body class="mechanical">
+        <div class="mechanism">
+            <span class="gear-big"></span>
+            <span class="gear-small"></span>
+        </div>
+    </body>
+	<style>
+@keyframes clockwise {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes anticlockwise {
+    to {
+        transform: rotate(-180deg);
+    }
+}
+
+.gear-big { 
+    animation-name: clockwise;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+.gear-small { 
+    animation-name: anticlockwise;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+	</style>
+</html>

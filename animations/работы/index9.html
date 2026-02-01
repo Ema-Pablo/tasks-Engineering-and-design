@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Привет, animation!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../материал/epoch3.css">
+    </head>
+    <body class="scientific">
+        <div class="sign"></div>
+        <div class="tube">
+            <span class="bubbles"></span>
+            <span class="reagent"></span>
+        </div>
+        <div class="tube">
+            <span class="bubbles"></span>
+            <span class="reagent experimental-reagent"></span>
+        </div>
+    </body>
+	<style>
+.bubbles {
+    animation-name: blink;
+    animation-duration: 2s;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes reaction {
+    0% {
+        background-color: #01ff70;
+    }
+
+    100% {
+        background-color: #ff4136;
+    }
+}
+.reagent {
+    animation-name: reaction;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.experimental-reagent {
+    animation-fill-mode: forwards;
+    animation-name: reaction;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+	</style>
+</html>

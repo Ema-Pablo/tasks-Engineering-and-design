@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Привет, animation!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../материал/epoch3.css">
+    </head>
+    <body class="scientific">
+        <div class="battery">
+            <span class="energy-logo"></span>
+            <span class="energy-fill"></span>
+        </div>
+        <div class="battery">
+            <span class="energy-logo"></span>
+            <span class="energy-fill mega-energy-fill"></span>
+        </div>
+    </body>
+	<style>
+.energy-logo {
+    animation-name: vibrate;
+    animation-duration: 2s;
+}
+
+@keyframes vibrate {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes power {
+    0% {
+        background-color: #01ff70;
+        width: 150px;
+    }
+    50% {
+        background-color: #ffdc00;
+    }
+    100% {
+        background-color: #ff4136;
+        width: 30px;
+    }
+}
+.energy-fill {
+    animation-name: power;
+    animation-delay: 2s;
+    animation-duration: 2s;
+}
+.mega-energy-fill {
+    animation-fill-mode: backwards;
+}
+
+	</style>
+</html>

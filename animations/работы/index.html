@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Привет, animation!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../материал/epoch1.css">
+    </head>
+    <body class="ancient">
+        <div class="stone">
+            <div class="wood-wheel"></div>
+        </div>
+    </body>
+	<style>
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.wood-wheel {
+    animation-name: rotate;
+    animation-duration: 2s;
+}
+	</style>
+</html>
