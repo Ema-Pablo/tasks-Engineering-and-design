@@ -1,0 +1,122 @@
+body {
+    background: #f0f2f5;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: inline-block;
+    color: #4a6ee0;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.case {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 320px;
+    overflow: hidden;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    outline: 2px solid #eeeeee; 
+    outline-offset: -1px;
+    box-shadow: 0 2px 15px #31313111;
+
+    transition: transform 0.3s ease;
+}
+
+.name-case {
+    width: fit-content;
+    max-width: 70%;
+    background-color: #4835ec;
+    padding: 16px 24px 16px 16px;
+    border-radius: 0 0 16px 0;
+    color: #ffffff;
+
+    transform: translateY(-100%); 
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+}
+.name-case h3 {
+    font-weight: 400;
+}
+
+.case.one { background-image: url("../images/portfolio/кейс-1.png");}
+.case.two { background-image: url("../images/portfolio/кейс-2.jpg");}
+.case.three { background-image: url("../images/portfolio/кейс-3.jpg");}
+.case.four { background-image: url("../images/portfolio/кейс-4.jpg");}
+.case.five { background-image: url("../images/portfolio/кейс-5.jpg");}
+.case.six { background-image: url("../images/portfolio/кейс-6.jpg");}
+
+.btn {
+    width: fit-content;
+    display: block;
+    padding: 12px;
+    background: rgb(31, 31, 31);
+    text-align: center;
+    text-decoration: none;
+    color: #e7e7e7;
+    border: 0;
+    border-radius: 8px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    backdrop-filter: blur(3px);
+    border: 1px solid #313131;
+
+    transform: translateY(64px); 
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+    background: rgb(31, 31, 31);
+    color: rgba(216, 216, 216, 0.904);
+    border: 1px solid #464646af;
+
+}
+
+.case:hover .name-case {
+    transform: translateY(0); 
+}
+
+.case:hover {
+    transform: scale(1.02); 
+}
+
+.case:hover .btn {
+    transform: translateY(0); 
+}
+
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}

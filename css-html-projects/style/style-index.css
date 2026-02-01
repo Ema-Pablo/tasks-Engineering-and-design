@@ -1,0 +1,52 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.content {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #242424;
+    margin-bottom: 64px;
+}
+
+
+/* сетка кнопок */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 20px; /* расстояние между кнопками */
+}
+
+.btn {
+    display: block;
+    padding: 25px;
+    background: white;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    border: 2px solid #eeeeee;
+    transition: background-color 0.2s ease, transform 0.2s;
+}
+
+.btn:hover {
+    background: #2575fc;
+    color: white;
+}
+
+/* На мобилках - 1 колонка */
+@media (max-width: 600px) {
+    .buttons-grid {
+        grid-template-columns: 1fr; /* 1 колонка */
+    }
+    
+    body {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг-страница</title>
+    <link rel="stylesheet" href="../style/global-styles.css">
+    <link rel="stylesheet" href="../style/style-landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="landing-container">
+        <!-- Шапка -->
+        <header class="head-content">
+            <a href="index.html" class="back-link">← На главную</a>
+            <div class="head-buttons">
+                <a href="#hero">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#testimonials">Отзывы</a>
+                <a href="#footer">Контакты</a>
+                <div class="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Основной контент -->
+        <main>
+            <!-- Главная секция -->
+            <section id="hero" class="hero">
+                <div class="left-hero">
+                    <h1>Кот ест</h1>
+                    <h3>Приветственная секция<br>с основным сообщением</h3>
+                    <div class="contact-buttons">
+                        <a href="#footer" class="btn">Свяжитесь</a>
+                    </div>
+                </div>
+                <div class="image-hero">
+                    <img src="../images/landing/cat-eat.gif" alt="Кот ест" class="image-cat-eat">
+                </div>
+            </section>
+            
+            <!-- О нас -->
+            <section id="about" class="about">
+                <div class="image-about">
+                    <img src="../images/landing/image-dog.png" alt="Пёс" class="image-dog">
+                </div>
+                <div class="right-about">
+                    <h2>О нас</h2>
+                    <h3>Информация о компании или проекте. Мы создаем качественные решения для бизнеса.</h3>
+                </div>
+            </section>
+            
+            <!-- Услуги -->
+            <section id="services" class="services">
+                <h2 class="services-title">Наши услуги</h2>
+                <h3 class="services-subtitle">Что мы предлагаем нашим клиентам</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>Веб-дизайн</h3>
+                        <p>Создаем современные и удобные интерфейсы для сайтов и приложений</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Разработка</h3>
+                        <p>Программируем сайты и веб-приложения на современных технологиях</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Мобильные приложения</h3>
+                        <p>Создаем нативные и кроссплатформенные мобильные приложения</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Отзывы -->
+            <section id="testimonials" class="testimonials">
+                <h2 class="testimonials-title">Отзывы клиентов</h2>
+                <h3 class="testimonials-subtitle">Что говорят о нашей работе</h3>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Отличная работа! Сайт был готов точно в срок, результат превзошел ожидания."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">АП</div>
+                            <div class="author-info">
+                                <h4>Анна Петрова</h4>
+                                <p>Директор компании "ТехноЛаб"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Профессиональный подход и внимательное отношение к деталям. Рекомендую!"
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">ИС</div>
+                            <div class="author-info">
+                                <h4>Иван Сидоров</h4>
+                                <p>Основатель стартапа "Нова"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Работали над сложном проекте, все этапы были прозрачны и понятны. Спасибо!"
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">МК</div>
+                            <div class="author-info">
+                                <h4>Мария Козлова</h4>
+                                <p>Маркетолог в "BrandStory"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Контакты -->
+        <footer id="footer" class="contact">
+            <h3>Контакты</h3>
+            <p>Свяжитесь с нами удобным способом</p>
+            
+            <div class="simple-contacts">
+                <p>Email: hello@example.com</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+                <p>Адрес: г. Москва, ул. Примерная, 15</p>
+            </div>
+            
+            <div class="contact-buttons">
+                <a href="#hero" class="btn">Наверх</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
